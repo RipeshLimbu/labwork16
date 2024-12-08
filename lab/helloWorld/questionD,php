@@ -1,0 +1,34 @@
+<?php
+// Input values for demonstration
+$age = 25;
+$is_student = true;
+$has_ticket = false;
+
+// Example of && (AND) operator
+if ($age >= 18 && $is_student) {
+    echo "You are eligible for the student discount.<br>";
+} else {
+    echo "You are not eligible for the student discount.<br>";
+}
+
+// Example of || (OR) operator
+if ($has_ticket || $age < 12) {
+    echo "You can enter the event.<br>";
+} else {
+    echo "You cannot enter the event without a ticket.<br>";
+}
+
+// Example of ! (NOT) operator
+if (!$has_ticket) {
+    echo "You need to buy a ticket.<br>";
+} else {
+    echo "You already have a ticket.<br>";
+}
+
+// Combining logical operators
+if (($age >= 18 && $is_student) || ($has_ticket)) {
+    echo "You qualify for the promotion.<br>";
+} else {
+    echo "You do not qualify for the promotion.<br>";
+}
+?>
